@@ -1,0 +1,42 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - faq_courier_duration
+  - ask_size_chart
+
+actions:
+- utter_greet
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+
+responses:
+  utter_faq_courier_duration:
+    - text: "Untuk kurir reguler akan tiba dalam\
+     3-4 hari sedangkan kurir ekspress akan tiba\
+      esok hari setelah pengiriman diproses"
+
+  utter_greet:
+  - text: "Hai, Kak. Ada yang bisa dibantu?"
+
+  utter_did_that_help:
+  - text: "Apakah jawaban kami sudah membantu?"
+
+  utter_happy:
+  - text: "Yay, terima kasih 😃"
+
+  utter_goodbye:
+  - text: "Sampai jumpa di lain kesempatan"
+
+  utter_default:
+  - text: "Maaf saya belum bisa memahami perkataan Anda :'("
+
+  utter_sorry:
+  - text: "Maaf belum bisa memberikan jawaban yang tepat 🙇"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
